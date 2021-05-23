@@ -112,3 +112,4 @@ ENV LD_LIBRARY_PATH="$LD_LIBRARY_PATH_NO_STUBS"
 
 # Install CUDA Toolkit
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install cuda && \
+    /tmp/clean-layer.sh
